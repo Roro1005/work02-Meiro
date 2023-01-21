@@ -24,27 +24,27 @@ public class Gui : MonoBehaviour
         System.IDisposable UpButtonListener = UpButton.OnPointerDownAsObservable().Subscribe(_ =>
         {
             Vector3 posishon = Copsel.transform.position;
-            posishon.z += 50.0f * Time.deltaTime; ;
+            posishon.z += 100.0f * Time.deltaTime; ;
             Copsel.transform.position = posishon;
         });
 
         System.IDisposable DownButtonListener = DownButton.OnPointerDownAsObservable().Subscribe(_ =>
         {
             Vector3 posishon = Copsel.transform.position;
-            posishon.z -= 50.0f * Time.deltaTime; ;
+            posishon.z -= 100.0f * Time.deltaTime; ;
             Copsel.transform.position = posishon;
         });
 
         System.IDisposable LButtonListener = LButton.OnPointerDownAsObservable().Subscribe(_ =>
         {
             Vector3 posishon = Copsel.transform.position;
-            posishon.x -= 50.0f * Time.deltaTime; ;
+            posishon.x -= 100.0f * Time.deltaTime; ;
             Copsel.transform.position = posishon;
         });
         System.IDisposable RButtonListener = RButton.OnPointerDownAsObservable().Subscribe(_ =>
         {
             Vector3 posishon = Copsel.transform.position;
-            posishon.x += 50.0f * Time.deltaTime; ;
+            posishon.x += 100.0f * Time.deltaTime; ;
             Copsel.transform.position = posishon;
         });
     }
