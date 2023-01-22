@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player" )
         {
             GoalText.SetActive(true);
         }
